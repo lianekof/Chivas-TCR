@@ -1605,24 +1605,24 @@ def bot(op):
 
 #-----------------------------------------------
 
-            elif msg.text in ["Cv say hinata pekok"]:
-                ki.sendText(msg.to,"Hinata pekok 􀜁􀅔Har Har􏿿")
-                kk.sendText(msg.to,"Hinata pekok 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"Hinata pekok 􀜁􀅔Har Har􏿿")
-            elif msg.text in ["Cv say didik pekok"]:
-                ki.sendText(msg.to,"Didik pekok 􀜁􀅔Har Har􏿿")
-                kk.sendText(msg.to,"Didik pekok 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"Didik pekok 􀜁􀅔Har Har􏿿")
+            elif msg.text in ["Cv say saya fans ian"]:
+                ki.sendText(msg.to,"Saya Fans IaN 􀜁􀅔Har Har􏿿")
+                kk.sendText(msg.to,"Saya Fans IaN 􀜁􀅔Har Har􏿿")
+                kc.sendText(msg.to,"Saya Fans IaN 􀜁􀅔Har Har􏿿")
+            elif msg.text in ["Cv say kalian homo"]:
+                ki.sendText(msg.to,"Kalian Homo 􀜁􀅔Har Har􏿿")
+                kk.sendText(msg.to,"Kalian Homo 􀜁􀅔Har Har􏿿")
+                kc.sendText(msg.to,"Kalian Homo 􀜁􀅔Har Har􏿿")
             elif msg.text in ["Cv say bobo ah","Bobo dulu ah"]:
                 ki.sendText(msg.to,"Have a nice dream Cv 􀜁􀅔Har Har􏿿")
                 kk.sendText(msg.to,"Have a nice dream Cv 􀜁􀅔Har Har􏿿")
                 kc.sendText(msg.to,"Have a nice dream Cv 􀜁􀅔Har Har􏿿")
-            elif msg.text in ["Cv say chomel pekok"]:
-                ki.sendText(msg.to,"Chomel pekok 􀜁􀅔Har Har􏿿")
-                kk.sendText(msg.to,"Chomel pekok 􀜁􀅔Har Har􏿿")
-                kc.sendText(msg.to,"Chomel pekok 􀜁􀅔Har Har􏿿")
+            elif msg.text in ["Cv say up mumbul"]:
+                ki.sendText(msg.to,"UP MUMBUL 􀜁􀅔Har Har􏿿")
+                kk.sendText(msg.to,"UP MUMBUL 􀜁􀅔Har Har􏿿")
+                kc.sendText(msg.to,"UP MUMBUL 􀜁􀅔Har Har􏿿")
             elif msg.text in ["#welcome"]:
-                ki.sendText(msg.to,"Selamat datang di Chivas Family Room")
+                ki.sendText(msg.to,"Selamat datang di IaN Family Room")
                 kk.sendText(msg.to,"Jangan nakal ok!")
 #-----------------------------------------------
             elif msg.text in ["PING","Ping","ping"]:
