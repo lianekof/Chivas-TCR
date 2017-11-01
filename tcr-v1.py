@@ -21,15 +21,10 @@ kk.login(qr=True)
 kc = LINETCR.LINE()
 kc.login(qr=True)
 
-ks = LINETCR.LINE()
-ks.login(qr=True)
-
-ka = ke = ki
+ka = ke = ks = ki
 
 kb = ku = kk
 
-
-ko = ks
 
 print "login success"
 reload(sys)
