@@ -23,7 +23,7 @@ kc.login(qr=True)
 
 ka = ke = ks = ki
 
-kb = ku = kk
+kb = ku = ko = kk
 
 
 print "login success"
@@ -952,23 +952,8 @@ def bot(op):
                 
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Dmid}
-                ks.sendMessage(msg)
+                ks.sendMessage(msg)                
                 
-                msg.contentType = 13
-                msg.contentMetadata = {'mid': Emid}
-                ka.sendMessage(msg)
-                
-                msg.contentType = 13
-                msg.contentMetadata = {'mid': Fmid}
-                kb.sendMessage(msg)
-                
-                msg.contentType = 13
-                msg.contentMetadata = {'mid': Gmid}
-                ko.sendMessage(msg)
-                
-                msg.contentType = 13
-                msg.contentMetadata = {'mid': Hmid}
-                ke.sendMessage(msg)
             elif msg.text in ["Me"]:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': msg.from_}
@@ -1868,24 +1853,9 @@ def bot(op):
                         cl.updateGroup(G)
                         invsend = 0
                         Ticket = cl.reissueGroupTicket(msg.to)
-                        ki.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        time.sleep(0.2)
-                        kk.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        time.sleep(0.2)
-                        kc.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        time.sleep(0.2)
-                        ks.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        time.sleep(0.2)
-                        ka.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        time.sleep(0.2)
-                        kb.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        time.sleep(0.2)
-                        ko.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        time.sleep(0.2)
-                        ke.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        time.sleep(0.2)
-                        ku.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        time.sleep(0.2)
+                        ki.acceptGroupInvitationByTicket(msg.to,Ticket)                        
+                        kk.acceptGroupInvitationByTicket(msg.to,Ticket)                        
+                        kc.acceptGroupInvitationByTicket(msg.to,Ticket)                                               
                         G = cl.getGroup(msg.to)
                         G.preventJoinByTicket = True
                         cl.updateGroup(G)
@@ -1954,13 +1924,7 @@ def bot(op):
                     try:
                         ki.leaveGroup(msg.to)
                         kk.leaveGroup(msg.to)
-                        kc.leaveGroup(msg.to)
-                        ks.leaveGroup(msg.to)
-                        ka.leaveGroup(msg.to)
-                        kb.leaveGroup(msg.to)
-                        ko.leaveGroup(msg.to)
-                        ke.leaveGroup(msg.to)
-                        ku.leaveGroup(msg.to)
+                        kc.leaveGroup(msg.to)                        
                     except:
                         pass
             elif msg.text in ["Bye _Second"]:
