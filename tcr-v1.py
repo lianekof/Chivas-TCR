@@ -6,8 +6,20 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re
 
 #Jika Sudah Ada Token Silahkan Login Pake Ini
+
 #cl = LINETCR.LINE()
 #cl.login(token="Your Token")
+
+#ki = LINETCR.LINE()
+#ki.login(token="Your Token")
+
+#kk = LINETCR.LINE()
+#kk.login(token="Your Token")
+
+#kc = LINETCR.LINE()
+#kc.login(token="Your Token")
+
+#-------------------------------------------------#
 
 cl = LINETCR.LINE()
 cl.login(qr=True)
