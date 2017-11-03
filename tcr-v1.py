@@ -5,6 +5,7 @@ from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re
 
+#Jika Sudah Ada Token Silahkan Login Pake Ini
 #cl = LINETCR.LINE()
 #cl.login(token="Your Token")
 
