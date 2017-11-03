@@ -6,7 +6,7 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re
 
 #--------------------- NOTE ----------------------------#
-
+#Hapus tanda pagarnya #
 #Jika Sudah Ada Token Silahkan Login Pake Ini
 
 #cl = LINETCR.LINE()
@@ -96,7 +96,7 @@ Setgroup =""" Privasi Menu V.1 􀔃􀄆red check mark􏿿
 -- Joinn on/off
 """
 KAC=[cl,ki,kk,kc,ks,ka,kb,ko,ke,ku]
-DEF=[ka,kb,ko,ke,ku]
+DEF=[ki,kk,kc]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
