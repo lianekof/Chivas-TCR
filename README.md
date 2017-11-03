@@ -1,3 +1,6 @@
+Pertama Download Dulu App Termux di Play Store
+Jika Sudah Punya Langsung Saja
+
 Untuk Pengguna Yang Baru Install Termux Lakukan Seperti Berikut
 
 pkg install python2 -y
