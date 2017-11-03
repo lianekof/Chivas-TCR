@@ -5,9 +5,8 @@ from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re
 
-#kk = LINETCR.LINE()
-#kk.login(qr=True)
-#kk.loginResult()
+#cl = LINETCR.LINE()
+#cl.login(token="Your Token")
 
 cl = LINETCR.LINE()
 cl.login(qr=True)
@@ -107,10 +106,6 @@ wait = {
     "wblack":False,
     "dblack":False,
     "clock":False,
-    "cName":"Bot by IaN ",
-    "cName2":"Support[R.A]",
-    "cName3":"[R.A][01] ",
-    "cName4":"[R.A][02] ",
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
@@ -1771,25 +1766,7 @@ def bot(op):
                         mc += "" +cl.getContact(mi_d).displayName + "\n"
                     cl.sendText(msg.to,mc)
                     
-        #-------------Fungsi Jam on/off Start-------------------#            
-            elif msg.text in ["Jam on"]:
-                if wait["clock"] == True:
-                    kc.sendText(msg.to,"Bot 4 jam on")
-                else:
-                    wait["clock"] = True
-                    now2 = datetime.now()
-                    nowT = datetime.strftime(now2,"(%H:%M)")
-                    profile = kc.getProfile()
-                    profile.displayName = wait["cName4"] + nowT
-                    kc.updateProfile(profile)
-                    kc.sendText(msg.to,"Jam Selalu On")
-            elif msg.text in ["Jam off"]:
-                if wait["clock"] == False:
-                    kc.sendText(msg.to,"Bot 4 jam off")
-                else:
-                    wait["clock"] = False
-                    kc.sendText(msg.to,"Jam Sedang Off")
-         #-------------Fungsi Jam on/off Finish-------------------#           
+       
          
          #-------------Fungsi Change Clock Start------------------#
             elif msg.text in ["Change clock"]:
@@ -1801,18 +1778,7 @@ def bot(op):
                     cl.sendText(msg.to,"changed to\n\n" + n)
          #-------------Fungsi Change Clock Finish-----------------#           
         
-         #-------------Fungsi Jam Update Start---------------------#            
-            elif msg.text in ["Jam Update"]:
-                if wait["clock"] == True:
-                    now2 = datetime.now()
-                    nowT = datetime.strftime(now2,"(%H:%M)")
-                    profile = kc.getProfile()
-                    profile.displayName = wait["cName4"] + nowT
-                    kc.updateProfile(profile)
-                    kc.sendText(msg.to,"Sukses update")
-                else:
-                    kc.sendText(msg.to,"Aktifkan jam terlebih dulu")
-         #-------------Fungsi Jam Update Finish-------------------#
+
 
             elif msg.text == "$set":
                     cl.sendText(msg.to, "Check sider")
@@ -2388,41 +2354,7 @@ def a2():
     else:
         return True
 
-def nameUpdate():
-    while True:
-        try:
-        #while a2():
-            #pass
-            if wait["clock"] == True:
-                now2 = datetime.now()
-                nowT = datetime.strftime(now2,"(%H:%M)")
-                profile = cl.getProfile()
-                profile.displayName = wait["cName"]
-                cl.updateProfile(profile)
 
-                profile2 = ki.getProfile()
-                profile2.displayName = wait["cName2"]
-                ki.updateProfile(profile2)
-
-                profile3 = kk.getProfile()
-                profile3.displayName = wait["cName3"]
-                kk.updateProfile(profile3)
-
-                profile4 = kc.getProfile()
-                profile4.displayName = wait["cName4"]
-                kc.updateProfile(profile4)
-
-                profile5 = ks.getProfile()
-                profile5.displayName = wait["cName5"]
-                ks.updateProfile(profile5a)
-
-                
-            time.sleep(600)
-        except:
-            pass
-thread2 = threading.Thread(target=nameUpdate)
-thread2.daemon = True
-thread2.start()
 
 while True:
     try:
