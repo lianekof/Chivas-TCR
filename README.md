@@ -1,3 +1,5 @@
+Untuk Pengguna Yang Baru Install Termux Lakukan Seperti Berikut
+
 pkg install python2 -y
 
 pkg install git -y
@@ -12,6 +14,15 @@ pip2 install thrift==0.9.3
 
 cd Chivas-TCR
 
+python2 tcr-v1.py
+
+#------------------------------------------------------------------------#
+
+Jika Sudah Pernah Isntall Python2 + Git + Pip2 Tinggal Lakukan 
+
+git clone https://github.com/lianekof/Chivas-TCR
+
+cd Chivas-TCR
 
 python2 tcr-v1.py
 
