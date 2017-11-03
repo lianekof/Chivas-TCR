@@ -2016,7 +2016,7 @@ def bot(op):
                         for target in targets:
                           if target not in Bots:
                             try:
-                                klist=[ki,kk,kc,ks,ka]
+                                klist=[ki,kk,kc]
                                 kicker=random.choice(klist)
                                 kicker.kickoutFromGroup(msg.to,[target])
                                 print (msg.to,[g.mid])
